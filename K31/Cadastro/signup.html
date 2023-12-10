@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="php/cadastro.php"
+        class="form"
+        name="frmlogin"
+        method="post"
+      >
+        <div class="logo">
+          <img src="../images/ghost-solid.svg" alt="" style="width: 70px" />
+        </div>
+
+        <div class="bottom">
+          <div class="title">
+            <h2 class="text-title">Cadastro</h2>
+          </div>
+
+          <div class="inputs">
+            <label for="">
+              <img
+                src="../images/user-solid.svg"
+                id="user"
+                alt=""
+                style="width: 15px"
+              />
+              <input
+                type="text"
+                class="input"
+                id="usuario"
+                placeholder="User Name"
+                name="user"
+                required
+                maxlength="12"
+              />
+            </label>
+
+            <label for="">
+              <img
+                src="../images/eye-solid.svg"
+                id="eye"
+                alt=""
+                style="width: 15px; cursor: pointer"
+              />
+              <input
+                type="password"
+                class="input"
+                id="password"
+                placeholder="User Password"
+                name="password"
+                required
+                maxlength="12"
+              />
+            </label>
+          </div>
+
+          <div class="submit">
+            <input type="submit" id="submit" onclick="login()" />
+          </div>
+
+          <h3 class="sign">Cadastro</h3>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="php/login.php" class="form" name="frmlogin" method="post">
+        <div class="logo">
+          <img src="../images/ghost-solid.svg" alt="" style="width: 70px" />
+        </div>
+
+        <div class="bottom">
+          <div class="title">
+            <h2 class="text-title">Login</h2>
+          </div>
+
+          <div class="inputs">
+            <label for="">
+              <img
+                src="../images/user-solid.svg"
+                id="user"
+                alt=""
+                style="width: 15px"
+              />
+              <input
+                type="text"
+                class="input"
+                id="usuario"
+                placeholder="User Name"
+                name="user"
+                required
+              />
+            </label>
+
+            <label for="">
+              <img
+                src="../images/eye-solid.svg"
+                id="eye"
+                alt=""
+                style="width: 15px"
+              />
+              <input
+                type="password"
+                class="input"
+                id="password"
+                placeholder="User Name"
+                name="password"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="submit">
+            <input type="submit" id="submit" value="Login" />
+          </div>
+
+          <b>
+            <h3 class="sign">Sign up</h3>
+          </b>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
